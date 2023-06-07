@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{vertical-align: top; max-width: 100%;}
+table{border-collapse: collapse;}
+table, th, td{border: 1px solid #000;}
+button{cursor: pointer;}
+body{ color: #333;}
+
+html, body, .wrap, header, .contents, .slide{height:100%;}
+
+header, .contents, .slide{float: left;}
+.wrap{min-width: 1400px;}
+.top{ height: calc(100% - 120px);}
+.top::after{clear: both; content: ""; display: block;}
+
+
+header{width: 200px; background:#d7322d; padding: 10px;}
+header h1{margin-bottom: 30px;}
+nav>ul>li>a{background: #70190f;display: block;padding: 10px 0; text-align: center; color: #fff;}
+nav>ul>li:hover>a{background: #333;}
+nav .sub li a{background: #fff; display: block; text-align: center; padding: 5px 0;}
+nav .sub li a:hover{color: #d7322d;}
+nav .sub{display: none;}
+
+.spot{margin-top: 20px; color: #fff; text-align: center; font-size: 14px;}
+.spot a:nth-child(1)::after{content: ""; display: inline-block; width: 1px; background: #fff; height: 14px; position: relative; top: 2px; margin-left: 3px;}
+
+.contents{width: 400px; padding: 20px 10px;}
+.banner{background: #d7322d; border-radius: 20px; overflow: hidden;}
+.banner::after{clear: both; content: ""; display: block;}
+.banner .photo{ width: 100px; height: 100px; float: left;}
+.banner .photo img{height: 100%; width: auto;}
+.banner .txt{  width: 200px; float: left; padding-top: 10px; color: #fff; padding-left: 10px;}
+.banner .txt h2{font-size: 17px; margin-bottom: 15px;}
+.banner .txt p{ font-size: 12px;}
+.banner .arrow{width: 80px;  float: left; text-align: center; padding-top: 20px; padding-left: 20px;}
+
+
+.notice{margin-top:20px;}
+.notice > h2{color: #fff; font-size: 18px; background: #d7322d; width: 120px; padding: 10px; text-align: center; border-radius: 20px 20px 0 0 ;}
+.notice table{width: 100%; border-top: 3px solid #d7322d;}
+.notice table, th, td{border-left:0; border-right: 0;}
+.notice table th{padding: 5px; text-align: left;}
+.notice table td{color: #ccc;}
+.notice a{display: block; width: 100px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+.gall{margin-top:20px;}
+.gall > h2{color: #fff; font-size: 18px; background: #d7322d; width: 120px; padding: 10px; text-align: center; border-radius: 20px 20px 0 0 ;}
+.gall ul{width: 100%; border-top: 3px solid #d7322d;}
+.gall ul::after{display: block; clear: both; content: "";}
+.gall ul li{width: 50%; float: left; text-align: center; padding-top: 20px;}
+.gall ul li p img{width: 120px; height: 150px;}
+.gall ul li p.img_box{width: 120px; height: 150px; margin: auto; }
+
+.link{margin-top:20px;}
+.link > h2{color: #fff; font-size: 18px; background: #d7322d; width: 120px; padding: 10px; text-align: center; border-radius: 20px 20px 0 0 ;}
+.link ul{width: 100%; border-top: 3px solid #d7322d;}
+.link ul::after{display: block; clear: both; content: "";}
+.link ul li{width: 25%; float: left; text-align: center; padding-top: 15px;}
+.link ul li p img{width: 60px; height: 60px;}
+.link ul li p.img_box{width: 60px; height: 60px; margin: auto;}
+
+
+.slide{width: calc(100% - 600px); position: relative; overflow: hidden;}
+.slide ul{width: 300%; position: absolute; top: 0; left: 0; height: 100%;}
+.slide ul::after{display: block; clear: both; content: '';}
+.slide ul li{width: calc(100% / 3); float: left; height: 100%; overflow: hidden; position: relative;}
+.slide .txt{position: absolute; bottom: 0; left: 0; background-color: rgba(0, 0, 0, .8); color: #fff; padding: 50px; width: 100%;}
+.slide .txt span{color: #d7322d;}
+.slide .txt h2{margin-bottom: 20px; font-size: 40px;}
+.slide .txt p{font-size: 22px;}
+
+footer{height: 120px; background: #333;position: relative; color: #fff; padding: 20px 0 0 200px}
+footer .f_logo{width: 100px; position: absolute; top:10px; left: 10px;}
+.f_menu{margin-bottom: 10px;}
+.f_menu li{display: inline-block; font-size:14px; border-right: 1px solid #fff; padding-right: 5px;}
+.f_menu li:last-child{border-right: 0;}
+
+.popBg{display:none;position: fixed; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .8); top: 0; left:0; z-index: 10;}
+.popCon{width: 500px; height: 500px; background: #fff; position: absolute; top: 50%; left: 50%;
+transform: translate(-50%, -50%); text-align: center;}
